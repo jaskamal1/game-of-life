@@ -8,4 +8,8 @@ node('Dockernode')
    {
     sh 'mvn package'
     }
-  }
+    stage('archiving artifacts')
+    {
+     archiveArtifacts artifacts: '/home/jenkins/workspace/Pipeline/gameoflife-web/target',      followSymlinks: false
+    }  
+   }

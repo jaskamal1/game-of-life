@@ -10,6 +10,6 @@ node('Dockernode')
     }
     stage('archiving artifacts')
     {
-     archiveArtifacts artifacts: '/gameoflife-web/target/*.war',      followSymlinks: false
+     archiveArtifacts artifacts: 'gameoflife-web/target/*.war',      followSymlinks: false
     }  
    }

@@ -10,6 +10,8 @@ node('Dockernode')
     }
     stage('archiving artifacts')
     {
-     archiveArtifacts artifacts: '/home/jenkins/workspace/Pipeline/gameoflife-web/target',      followSymlinks: false
+     archiveArtifacts artifacts: '/home/jenkins/workspace/Pipeline/gameoflife-web/target',      
+
+followSymlinks: false
     }  
    }
